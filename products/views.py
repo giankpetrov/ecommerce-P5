@@ -32,19 +32,17 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
-    if request.GET:
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+            if 'category' in request.GET:
+                categories = request.GET['category'].split(',')
+                products = products.filter(category__name__in=categories)
+                categories = Category.objects.filter(name__in=categories)
 
-    if request.GET:
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(
-                    request, "¡No ingresaste ningún criterio de búsqueda!")
-                return redirect(reverse('products'))
+            if 'q' in request.GET:
+                query = request.GET['q']
+                if not query:
+                    messages.error(
+                        request, "¡No ingresaste ningún criterio de búsqueda!")
+                    return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(
                 description__icontains=query)
