@@ -57,7 +57,7 @@ def checkout(request):
             order.save()
             for item_id, item_data in bag.items():
                 try:
-                    product = Product.objects.get(id=item_id)
+                    product = Product.objects.get(id=item_id) # pylint: disable=no-member
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
