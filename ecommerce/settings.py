@@ -27,7 +27,8 @@ SECRET_KEY = [
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-giankpetrov-ecommerce-p5-d44g7eycsn.us2.codeanyapp.com']
+ALLOWED_HOSTS = [
+    '8000-giankpetrov-ecommerce-p5-vxh9o5aqwc.us2.codeanyapp.com']
 
 
 # Application definition
