@@ -14,19 +14,21 @@ def profile(request):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Profile updated successfully')
+            messages.success(request, 'Perfil actualizado con éxito')
+        else:
+            messages.error(request, 'Update failed. Please ensure the form is valid.')
+    else:
+        form = UserProfileForm(instance=profile)
+        orders = profile.orders.all()
 
-    form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
+        template = 'profiles/profile.html'
+        context = {
+            'form': form,
+            'orders': orders,
+            'on_profile_page': True
+        }
 
-    template = 'profiles/profile.html'
-    context = {
-        'form': form,
-        'orders': orders,
-        'on_profile_page': True
-    }
-
-    return render(request, template, context)
+        return render(request, template, context)
 
 
 def order_history(request, order_number):
