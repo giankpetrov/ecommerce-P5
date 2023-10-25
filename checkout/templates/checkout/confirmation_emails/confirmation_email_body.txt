@@ -1,0 +1,22 @@
+Saludos, {{ order.full_name }}!
+
+Esta es una confirmación de su pedido en Arandano Creativo. La información de su pedido se encuentra a continuación:
+
+Numero de Orden: {{ order.order_number }}
+Fecha de la Orden: {{ order.date }}
+
+Sub-Total: ${{ order.order_total }}
+Costo de envio: ${{ order.delivery_cost }}
+Total: ${{ order.grand_total }}
+
+Su pedido sera enviado a {{ order.street_address1 }} en {{ order.town_or_city }}, {{ order.country }}.
+
+Tenemos su número de teléfono registrado como {{ order.phone_number }}.
+
+Si tiene alguna pregunta, no dude en contactarnos en {{ contact_email }}.
+
+¡Gracias por su orden!
+
+Atentamente,
+
+Arandano Creativo
