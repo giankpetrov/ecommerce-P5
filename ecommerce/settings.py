@@ -28,10 +28,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # DEBUG = True
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = [
-    '8000-giankpetrov-ecommerce-p5-vxh9o5aqwc.us2.codeanyapp.com',
-    'gianncarlociampaglia-5p-5865812be146.herokuapp.com',
-    'localhost']
+ALLOWED_HOSTS = ['8000-giankpetrov-ecommerce-p5-vxh9o5aqwc.us2.codeanyapp.com',
+                 'gianncarlociampaglia-5p-5865812be146.herokuapp.com',
+                 'localhost',
+                 'gianncarlociampaglia-5pherokuapp.com']
 
 
 # Application definition
