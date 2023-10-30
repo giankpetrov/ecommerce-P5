@@ -17,3 +17,12 @@ Arandano Creativo is a vibrant and user-friendly e-commerce platform that brings
 <img height="50" src="https://user-images.githubusercontent.com/25181517/183898054-b3d693d4-dafb-4808-a509-bab54cf5de34.png"> __Bootstrap__
 <img height="50" src="https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png"> __PostgreSQL__
 <img height="50" src="https://user-images.githubusercontent.com/25181517/183896132-54262f2e-6d98-41e3-8888-e40ab5a17326.png"> __AWS__
+
+## Colour Scheme
+
+The colours were provided by they Graphic designer
+
+I used [Coolors.co](https://coolors.co/) to keep a control on the color scheme selected.
+
+<img height="300" src="https://github.com/giankpetrov/ecommerce-P5/blob/main/static/images/COOLORS.PNG">
+</kbd>
