@@ -271,6 +271,15 @@ input[name='q']::placeholder {
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
+
+    body {
+            background: url('/static/images/background_mobile.webp') no-repeat center center fixed;
+            background-size: cover;
+            height: calc(100vh - 164px);
+            color: #555;
+            
+        }
+    
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
