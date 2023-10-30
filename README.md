@@ -1,4 +1,4 @@
-Welcome to **Arandano Creativo**. 
+# Welcome to **Arandano Creativo**.
 
 Arandano Creativo is a vibrant and user-friendly e-commerce platform that brings together creativity and convenience. It was developed as a MVP to a Peruvian Startup which is looking to grow their brand by increasing their online presence.
 
@@ -26,3 +26,14 @@ I used [Coolors.co](https://coolors.co/) to keep a control on the color scheme s
 
 <img height="300" src="https://github.com/giankpetrov/ecommerce-P5/blob/main/static/images/COOLORS.PNG">
 </kbd>
+
+## Credits
+
+### Code
+
+- Starting idea for functionality and design from Boutique Ado, [Code Institute.](https://codeinstitute.net/)
+
+### Design
+
+- Tech Stack Icons [github.com/Marwin1991](https://github.com/marwin1991/profile-technology-icons)
+- Ideas to finish my README file from [adamgilroy22](https://github.com/adamgilroy22) and [cmikedev](https://github.com/cmikedev)
